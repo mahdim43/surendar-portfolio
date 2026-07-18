@@ -567,7 +567,8 @@ import Layout from '../layouts/Layout.astro';
   }
 </style>
 
-<script>
+<script is:inline>
+document.addEventListener('DOMContentLoaded', function() {
   // Loader
   setTimeout(function() {
     var loader = document.getElementById('loader');
@@ -710,4 +711,5 @@ import Layout from '../layouts/Layout.astro';
     });
   }, { threshold: 0.3 });
   sections.forEach(function(s) { sectionObserver.observe(s); });
+});
 </script>
