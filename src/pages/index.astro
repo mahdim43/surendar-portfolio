@@ -37,27 +37,27 @@ import Layout from '../layouts/Layout.astro';
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="container-x hero-content">
         <div class="hero-text">
-          <div class="hero-eyebrows reveal">
+          <div class="hero-eyebrows">
             <span class="eyebrow">Mashhad, Iran</span>
             <span class="eyebrow-sep">/</span>
             <span class="eyebrow">Network & Infrastructure</span>
             <span class="eyebrow-sep">/</span>
             <span class="eyebrow">VoIP & ERP</span>
           </div>
-          <h1 class="reveal delay-1">
+          <h1>
             <span class="name-first">Mahdi</span>
             <span class="name-last">Hooshmand</span>
           </h1>
-          <p class="hero-desc reveal delay-2">
+          <p class="hero-desc">
             Building and maintaining reliable network infrastructure, VoIP systems,
             and server environments. 5+ years of hands-on experience turning complex
             technical challenges into stable, scalable solutions.
           </p>
-          <div class="hero-actions reveal delay-2">
+          <div class="hero-actions">
             <a href="#projects" class="btn btn-accent">View Projects</a>
             <a href="#contact" class="btn btn-outline">Get In Touch</a>
           </div>
-          <a href="#skills" class="scroll-hint reveal delay-2">
+          <a href="#skills" class="scroll-hint">
             <span class="scroll-line"></span>
             <span>Explore my work</span>
           </a>
@@ -69,18 +69,24 @@ import Layout from '../layouts/Layout.astro';
     <section class="stats-section border-t">
       <div class="container-x">
         <div class="stats-grid">
-          <div class="stat-item reveal">
-            <span class="stat-number">5+</span>
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-count="5">0</span><span class="stat-suffix">+</span>
+            </div>
             <span class="stat-label">Years Experience</span>
             <span class="stat-desc">In network infrastructure and IT systems</span>
           </div>
-          <div class="stat-item reveal delay-1">
-            <span class="stat-number">30</span>
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-count="30">0</span>
+            </div>
             <span class="stat-label">Users Supported</span>
             <span class="stat-desc">Small and mid-sized business environments</span>
           </div>
-          <div class="stat-item reveal delay-2">
-            <span class="stat-number">4</span>
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-count="4">0</span>
+            </div>
             <span class="stat-label">Major Projects</span>
             <span class="stat-desc">VoIP, Network, ERP, and Containerization</span>
           </div>
@@ -91,97 +97,91 @@ import Layout from '../layouts/Layout.astro';
     <!-- SKILLS -->
     <section id="skills" class="section-space border-t">
       <div class="container-x">
-        <span class="eyebrow reveal">[ Core Skills ]</span>
-        <h2 class="section-title reveal delay-1">What I Work With</h2>
-        <p class="section-desc reveal delay-2">
-          Specialized in building and managing IT infrastructure for businesses.
-          From network design to VoIP deployment to ERP implementation.
-        </p>
-        <div class="skills-grid reveal delay-2">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M8 10h0M12 10h0M16 10h0M8 14h0M12 14h0M16 14h0"/>
-              </svg>
-            </div>
-            <h3>Networking</h3>
-            <p>MikroTik (MTCNA), Cisco, VLAN, NAT, Firewall, VPN, LAN/WAN, Advanced Troubleshooting</p>
-            <div class="skill-tags">
-              <span class="tag">MikroTik</span>
-              <span class="tag">Cisco</span>
-              <span class="tag">Firewall</span>
-              <span class="tag">VPN</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M3 18V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M8 10h8M8 14h4"/>
-              </svg>
-            </div>
-            <h3>VoIP Systems</h3>
-            <p>Asterisk, Issabel, SIP Trunk, IVR, Call Queue, Call Center Setup, FXO/FXS Configuration</p>
-            <div class="skill-tags">
-              <span class="tag">Asterisk</span>
-              <span class="tag">Issabel</span>
-              <span class="tag">SIP</span>
-              <span class="tag">IVR</span>
+        <div class="skills-layout">
+          <div class="skills-left">
+            <span class="section-label">Core Skills</span>
+            <h2 class="section-title">What I Work With</h2>
+            <p class="caveat">Specialized in building and managing IT infrastructure for businesses.</p>
+            <div class="skills-text">
+              <p>
+                With over 5 years of hands-on experience, I've developed deep expertise across
+                multiple domains of IT infrastructure. My work spans from designing secure network
+                architectures to deploying enterprise communication systems and managing complex
+                server environments.
+              </p>
+              <div class="skill-badges-inline">
+                <span class="skill-badge">MikroTik</span>
+                <span class="skill-badge">Cisco</span>
+                <span class="skill-badge">Asterisk</span>
+                <span class="skill-badge">Issabel</span>
+                <span class="skill-badge">Windows Server</span>
+                <span class="skill-badge">Linux</span>
+                <span class="skill-badge">VMware</span>
+                <span class="skill-badge">Docker</span>
+                <span class="skill-badge">Odoo</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">VoIP</span>
+                <span class="skill-badge">VPN</span>
+                <span class="skill-badge">Firewall</span>
+              </div>
             </div>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
-              </svg>
+          <div class="skills-right">
+            <div class="skill-category-card">
+              <h3>Networking</h3>
+              <p>MikroTik (MTCNA), Cisco, VLAN, NAT, Firewall, VPN, LAN/WAN, Advanced Troubleshooting</p>
+              <div class="skill-tags">
+                <span class="tag">MikroTik</span>
+                <span class="tag">Cisco</span>
+                <span class="tag">Firewall</span>
+                <span class="tag">VPN</span>
+              </div>
             </div>
-            <h3>Servers & Virtualization</h3>
-            <p>Windows Server (AD, DNS, DHCP), Linux (Debian, Ubuntu), VMware ESXi, Backup Strategy</p>
-            <div class="skill-tags">
-              <span class="tag">Windows Server</span>
-              <span class="tag">Linux</span>
-              <span class="tag">VMware</span>
-              <span class="tag">ESXi</span>
+            <div class="skill-category-card">
+              <h3>VoIP Systems</h3>
+              <p>Asterisk, Issabel, SIP Trunk, IVR, Call Queue, Call Center Setup, FXO/FXS Configuration</p>
+              <div class="skill-tags">
+                <span class="tag">Asterisk</span>
+                <span class="tag">Issabel</span>
+                <span class="tag">SIP</span>
+                <span class="tag">IVR</span>
+              </div>
             </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/>
-              </svg>
+            <div class="skill-category-card">
+              <h3>Servers & Virtualization</h3>
+              <p>Windows Server (AD, DNS, DHCP), Linux (Debian, Ubuntu), VMware ESXi, Backup Strategy</p>
+              <div class="skill-tags">
+                <span class="tag">Windows Server</span>
+                <span class="tag">Linux</span>
+                <span class="tag">VMware</span>
+                <span class="tag">ESXi</span>
+              </div>
             </div>
-            <h3>ERP & Database</h3>
-            <p>Odoo ERP Deployment, CRM Implementation, SQL Query Writing, Process Automation</p>
-            <div class="skill-tags">
-              <span class="tag">Odoo</span>
-              <span class="tag">CRM</span>
-              <span class="tag">SQL</span>
+            <div class="skill-category-card">
+              <h3>ERP & Database</h3>
+              <p>Odoo ERP Deployment, CRM Implementation, SQL Query Writing, Process Automation</p>
+              <div class="skill-tags">
+                <span class="tag">Odoo</span>
+                <span class="tag">CRM</span>
+                <span class="tag">SQL</span>
+              </div>
             </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9l3 3-3 3M15 15l-3-3 3-3"/>
-              </svg>
+            <div class="skill-category-card">
+              <h3>DevOps</h3>
+              <p>Docker (Self-hosted deployments), Containerized Odoo, Linux-based service management</p>
+              <div class="skill-tags">
+                <span class="tag">Docker</span>
+                <span class="tag">Linux</span>
+                <span class="tag">Containers</span>
+              </div>
             </div>
-            <h3>DevOps</h3>
-            <p>Docker (Self-hosted deployments), Containerized Odoo, Linux-based service management</p>
-            <div class="skill-tags">
-              <span class="tag">Docker</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Containers</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            <h3>Education</h3>
-            <p>Associate Degree in Software Engineering (IT), Islamic Azad University, Mashhad. MTCNA Certified.</p>
-            <div class="skill-tags">
-              <span class="tag">MTCNA</span>
-              <span class="tag">Azad University</span>
+            <div class="skill-category-card">
+              <h3>Education</h3>
+              <p>Associate Degree in Software Engineering (IT), Islamic Azad University, Mashhad. MTCNA Certified.</p>
+              <div class="skill-tags">
+                <span class="tag">MTCNA</span>
+                <span class="tag">Azad University</span>
+              </div>
             </div>
           </div>
         </div>
@@ -192,8 +192,8 @@ import Layout from '../layouts/Layout.astro';
     <section id="experience" class="section-space border-t experience-bg">
       <div class="container-x">
         <div class="exp-layout">
-          <div class="exp-header reveal">
-            <span class="eyebrow">[ My Journey ]</span>
+          <div class="exp-header">
+            <span class="section-label">My Journey</span>
             <h2 class="section-title">Where I've Worked</h2>
             <p class="section-desc">
               Building expertise across networking, VoIP, and enterprise systems
@@ -201,7 +201,7 @@ import Layout from '../layouts/Layout.astro';
             </p>
           </div>
           <div class="timeline">
-            <div class="timeline-item reveal">
+            <div class="timeline-item">
               <div class="timeline-dot" style="background: var(--accent)"></div>
               <div class="timeline-content">
                 <span class="timeline-role">Hamyar Hooshmand Chabok</span>
@@ -215,7 +215,7 @@ import Layout from '../layouts/Layout.astro';
                 </div>
               </div>
             </div>
-            <div class="timeline-item reveal delay-1">
+            <div class="timeline-item">
               <div class="timeline-dot" style="background: var(--accent)"></div>
               <div class="timeline-content">
                 <span class="timeline-role">Sazeh Hesab</span>
@@ -228,7 +228,7 @@ import Layout from '../layouts/Layout.astro';
                 </div>
               </div>
             </div>
-            <div class="timeline-item reveal delay-1">
+            <div class="timeline-item">
               <div class="timeline-dot" style="background: #7fd4c6"></div>
               <div class="timeline-content">
                 <span class="timeline-role">Nasim Ertebat Ayandeh</span>
@@ -242,7 +242,7 @@ import Layout from '../layouts/Layout.astro';
                 </div>
               </div>
             </div>
-            <div class="timeline-item reveal delay-2">
+            <div class="timeline-item">
               <div class="timeline-dot" style="background: #7fd4c6"></div>
               <div class="timeline-content">
                 <span class="timeline-role">Shahr IT</span>
@@ -262,64 +262,81 @@ import Layout from '../layouts/Layout.astro';
     <!-- PROJECTS -->
     <section id="projects" class="section-space border-t">
       <div class="container-x">
-        <span class="eyebrow reveal">[ Featured Work ]</span>
-        <h2 class="section-title reveal delay-1">Projects</h2>
-        <p class="section-desc reveal delay-2">
+        <span class="section-label">Featured Work</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">
           Key infrastructure projects that demonstrate my ability to design,
           deploy, and maintain complex technical systems.
         </p>
-        <div class="projects-grid">
-          <article class="project-card reveal">
-            <div class="project-header">
+        <div class="projects-list">
+          <article class="project-row">
+            <div class="project-row-left">
               <span class="project-number">01</span>
-              <span class="project-badge">VoIP</span>
+              <div class="project-info">
+                <span class="project-category">VoIP Infrastructure</span>
+                <h3 class="project-title">Multi-Sector VoIP Deployment</h3>
+                <p class="project-desc">Implemented VoIP services for a hotel, residential complex, taxi service center and trading companies. Configured Asterisk/Issabel servers, IVR, call queues and SIP trunks.</p>
+                <div class="project-metric">
+                  <span class="metric-value">4</span>
+                  <span class="metric-label">Business Sectors</span>
+                </div>
+              </div>
             </div>
-            <h3>Multi-Sector VoIP Deployment</h3>
-            <p>Implemented VoIP services for a hotel, residential complex, taxi service center and trading companies. Configured Asterisk/Issabel servers, IVR, call queues and SIP trunks.</p>
-            <div class="project-metric">
-              <span class="metric-value">4</span>
-              <span class="metric-label">Business Sectors</span>
-            </div>
-            <div class="skill-tags">
-              <span class="tag">Asterisk</span>
-              <span class="tag">Issabel</span>
-              <span class="tag">SIP</span>
-              <span class="tag">IVR</span>
+            <div class="project-row-right">
+              <div class="project-image-placeholder" style="background: linear-gradient(135deg, #1a1520 0%, #2a1f2d 40%, rgba(233,184,114,0.1) 100%);"></div>
+              <div class="skill-tags">
+                <span class="tag">Asterisk</span>
+                <span class="tag">Issabel</span>
+                <span class="tag">SIP</span>
+                <span class="tag">IVR</span>
+              </div>
             </div>
           </article>
-          <article class="project-card reveal delay-1">
-            <div class="project-header">
+
+          <article class="project-row">
+            <div class="project-row-left">
               <span class="project-number">02</span>
-              <span class="project-badge">Network</span>
+              <div class="project-info">
+                <span class="project-category">Network & Virtualization</span>
+                <h3 class="project-title">Enterprise Network Design</h3>
+                <p class="project-desc">Designed and implemented secure LAN infrastructure including VLAN segmentation, firewall rules and VPN access. Deployed VMware ESXi virtualization environment.</p>
+                <div class="project-metric">
+                  <span class="metric-value">20</span>
+                  <span class="metric-label">Users Supported</span>
+                </div>
+              </div>
             </div>
-            <h3>Network & Virtualization</h3>
-            <p>Designed and implemented secure LAN infrastructure including VLAN segmentation, firewall rules and VPN access. Deployed VMware ESXi virtualization environment.</p>
-            <div class="project-metric">
-              <span class="metric-value">20</span>
-              <span class="metric-label">Users Supported</span>
-            </div>
-            <div class="skill-tags">
-              <span class="tag">MikroTik</span>
-              <span class="tag">VMware</span>
-              <span class="tag">VLAN</span>
-              <span class="tag">VPN</span>
+            <div class="project-row-right">
+              <div class="project-image-placeholder" style="background: linear-gradient(135deg, #151a20 0%, #1a2a2d 40%, rgba(127,212,198,0.1) 100%);"></div>
+              <div class="skill-tags">
+                <span class="tag">MikroTik</span>
+                <span class="tag">VMware</span>
+                <span class="tag">VLAN</span>
+                <span class="tag">VPN</span>
+              </div>
             </div>
           </article>
-          <article class="project-card reveal delay-2">
-            <div class="project-header">
+
+          <article class="project-row">
+            <div class="project-row-left">
               <span class="project-number">03</span>
-              <span class="project-badge">ERP</span>
+              <div class="project-info">
+                <span class="project-category">ERP & Business Systems</span>
+                <h3 class="project-title">Odoo ERP Deployment</h3>
+                <p class="project-desc">Installed and configured Odoo ERP including CRM and sales modules. Automated internal workflows and improved reporting structure for management team.</p>
+                <div class="project-metric">
+                  <span class="metric-value">30</span>
+                  <span class="metric-label">Users Onboarded</span>
+                </div>
+              </div>
             </div>
-            <h3>Odoo ERP Deployment</h3>
-            <p>Installed and configured Odoo ERP including CRM and sales modules. Automated internal workflows and improved reporting structure for management team.</p>
-            <div class="project-metric">
-              <span class="metric-value">30</span>
-              <span class="metric-label">Users Onboarded</span>
-            </div>
-            <div class="skill-tags">
-              <span class="tag">Odoo</span>
-              <span class="tag">CRM</span>
-              <span class="tag">SQL</span>
+            <div class="project-row-right">
+              <div class="project-image-placeholder" style="background: linear-gradient(135deg, #1a1a15 0%, #2a2a1d 40%, rgba(233,184,114,0.08) 100%);"></div>
+              <div class="skill-tags">
+                <span class="tag">Odoo</span>
+                <span class="tag">CRM</span>
+                <span class="tag">SQL</span>
+              </div>
             </div>
           </article>
         </div>
@@ -330,8 +347,8 @@ import Layout from '../layouts/Layout.astro';
     <section id="contact" class="section-space border-t">
       <div class="container-x">
         <div class="contact-layout">
-          <div class="contact-left reveal">
-            <span class="eyebrow">[ Contact ]</span>
+          <div class="contact-left">
+            <span class="section-label">Contact</span>
             <h2 class="section-title">Let's Work Together</h2>
             <p class="section-desc">
               Open to new opportunities and collaborations in network infrastructure,
@@ -346,7 +363,7 @@ import Layout from '../layouts/Layout.astro';
               <a href="https://linkedin.com/in/mahdi-hooshmand" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
             </div>
           </div>
-          <div class="contact-card reveal delay-1">
+          <div class="contact-card">
             <div class="contact-info-row">
               <span class="eyebrow">Email</span>
               <a href="mailto:hooshmandm43@gmail.com" class="contact-value">hooshmandm43@gmail.com</a>
@@ -396,18 +413,18 @@ import Layout from '../layouts/Layout.astro';
   .loader-inner { text-align: center; }
   .loader-name { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--fg); letter-spacing: 0.1em; display: block; margin-bottom: 20px; }
   .loader-bar { width: 200px; height: 2px; background: var(--line); margin: 0 auto 12px; overflow: hidden; }
-  .loader-fill { width: 0%; height: 100%; background: var(--accent); animation: loader-fill 0.8s ease-out forwards; }
+  .loader-fill { width: 0%; height: 100%; background: var(--accent); animation: loader-fill 1s ease-out forwards; }
   @keyframes loader-fill { to { width: 100%; } }
   .loader-status { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--fg-faint); }
 
   /* HEADER */
   .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; border-bottom: 1px solid transparent; background: rgba(10,10,15,0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: border-color 0.3s; }
   .site-header.scrolled { border-bottom-color: var(--line); }
-  .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
   .brand { font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: #fff; letter-spacing: 0.05em; }
   .accent-dot { color: var(--accent); }
   .header-nav { display: flex; align-items: center; gap: 32px; }
-  .nav-link { font-size: 14px; color: var(--fg-muted); transition: color 0.2s; }
+  .nav-link { font-size: 13px; color: var(--fg-muted); transition: color 0.2s; letter-spacing: 0.02em; }
   .nav-link:hover { color: var(--fg); }
   .nav-cta { border: 1px solid var(--accent); color: var(--accent); padding: 8px 20px; border-radius: 9999px; font-size: 13px; transition: all 0.2s; }
   .nav-cta:hover { background: var(--accent); color: var(--bg); }
@@ -418,15 +435,15 @@ import Layout from '../layouts/Layout.astro';
 
   /* HERO */
   .hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
-  .hero-glow { position: absolute; right: 10%; top: 20%; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(233,184,114,0.08) 0%, transparent 60%); filter: blur(80px); pointer-events: none; }
+  .hero-glow { position: absolute; right: 10%; top: 20%; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(233,184,114,0.06) 0%, transparent 60%); filter: blur(80px); pointer-events: none; }
   .hero-content { position: relative; z-index: 1; padding: 120px 0 80px; }
-  .hero-text { max-width: 680px; }
+  .hero-text { max-width: 720px; }
   .hero-eyebrows { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
   .eyebrow-sep { color: var(--fg-faint); font-size: 11px; }
   h1 { margin-bottom: 24px; }
   .name-first { display: block; }
   .name-last { display: block; color: var(--fg-muted); }
-  .hero-desc { font-size: 18px; line-height: 1.7; color: var(--fg-muted); max-width: 540px; margin-bottom: 32px; }
+  .hero-desc { font-size: 20px; line-height: 1.75; color: var(--fg-muted); max-width: 560px; margin-bottom: 32px; }
   .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
   .scroll-hint { display: inline-flex; align-items: center; gap: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--fg-faint); transition: color 0.2s; }
   .scroll-hint:hover { color: var(--accent); }
@@ -441,10 +458,12 @@ import Layout from '../layouts/Layout.astro';
   .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
   /* STATS */
-  .stats-section { padding: 64px 0; }
-  .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .stats-section { padding: 80px 0; }
+  .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
   .stat-item { border-top: 1px solid var(--line); padding-top: 24px; }
-  .stat-number { font-family: 'Fraunces', serif; font-size: clamp(3rem, 8vw, 5rem); color: var(--accent); line-height: 1; display: block; }
+  .stat-number-wrap { display: flex; align-items: baseline; }
+  .stat-number { font-family: 'Fraunces', serif; font-size: clamp(3.5rem, 8vw, 5.5rem); color: var(--accent); line-height: 1; }
+  .stat-suffix { font-family: 'Fraunces', serif; font-size: clamp(2rem, 5vw, 3rem); color: var(--accent); line-height: 1; margin-left: 4px; }
   .stat-label { font-size: 1rem; font-weight: 600; color: #fff; margin-top: 8px; display: block; }
   .stat-desc { font-size: 14px; color: var(--fg-muted); margin-top: 4px; display: block; }
 
@@ -453,12 +472,13 @@ import Layout from '../layouts/Layout.astro';
   .section-desc { font-size: 16px; line-height: 1.7; color: var(--fg-muted); max-width: 560px; margin-bottom: 48px; }
 
   /* SKILLS */
-  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .skill-card { border: 1px solid var(--line); border-radius: 12px; padding: 24px; background: var(--bg-elev); transition: border-color 0.2s; }
-  .skill-card:hover { border-color: rgba(233,184,114,0.4); }
-  .skill-icon { width: 36px; height: 36px; color: var(--accent); margin-bottom: 16px; }
-  .skill-card h3 { font-size: 0.9rem; margin-bottom: 8px; color: #fff; }
-  .skill-card p { font-size: 13px; line-height: 1.6; color: var(--fg-muted); margin-bottom: 16px; }
+  .skills-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start; }
+  .skills-text p { font-size: 15px; line-height: 1.7; color: var(--fg-muted); margin-bottom: 20px; }
+  .skill-badges-inline { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .skill-category-card { border: 1px solid var(--line); border-radius: 12px; padding: 24px; background: var(--bg-card); margin-bottom: 12px; transition: border-color 0.3s; }
+  .skill-category-card:hover { border-color: rgba(233, 184, 114, 0.3); }
+  .skill-category-card h3 { font-size: 1rem; margin-bottom: 8px; }
+  .skill-category-card p { font-size: 13px; line-height: 1.6; color: var(--fg-muted); margin-bottom: 12px; }
   .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
   .tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border: 1px solid var(--line-soft); border-radius: 9999px; color: var(--fg-muted); }
 
@@ -466,24 +486,28 @@ import Layout from '../layouts/Layout.astro';
   .experience-bg { background: radial-gradient(120% 80% at 75% 30%, rgba(233,184,114,0.03) 0%, transparent 55%); }
   .exp-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 64px; align-items: start; }
   .exp-header { position: sticky; top: 100px; }
-  .timeline { display: flex; flex-direction: column; gap: 48px; border-left: 1px solid var(--line); padding-left: 32px; }
-  .timeline-item { position: relative; }
-  .timeline-dot { position: absolute; left: -39px; top: 6px; width: 12px; height: 12px; border-radius: 50%; border: 3px solid var(--bg); }
+  .timeline { display: flex; flex-direction: column; gap: 0; border-left: 1px solid var(--line); padding-left: 32px; }
+  .timeline-item { position: relative; padding: 32px 0; border-bottom: 1px solid var(--line); }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-dot { position: absolute; left: -39px; top: 36px; width: 12px; height: 12px; border-radius: 50%; border: 3px solid var(--bg); }
   .timeline-role { font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); display: block; }
-  .timeline-date { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg-faint); display: block; margin-top: 4px; }
-  .timeline-content h3 { font-size: 1.5rem; margin-top: 12px; margin-bottom: 12px; }
+  .timeline-date { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg-faint); display: block; margin-top: 4px; margin-bottom: 8px; }
+  .timeline-content h3 { font-size: 1.4rem; margin-bottom: 12px; }
   .timeline-content p { font-size: 15px; line-height: 1.7; color: var(--fg-muted); max-width: 52ch; margin-bottom: 16px; }
 
   /* PROJECTS */
-  .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .project-card { border: 1px solid var(--line); border-radius: 12px; padding: 28px; background: var(--bg-elev); transition: all 0.2s; }
-  .project-card:hover { border-color: rgba(233,184,114,0.4); transform: translateY(-2px); }
-  .project-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
-  .project-number { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--fg-faint); }
-  .project-badge { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 12px; border: 1px solid var(--accent); border-radius: 9999px; color: var(--accent); }
-  .project-card h3 { font-size: 1rem; margin-bottom: 12px; color: #fff; }
-  .project-card p { font-size: 13px; line-height: 1.6; color: var(--fg-muted); margin-bottom: 20px; }
-  .project-metric { display: flex; align-items: baseline; gap: 8px; margin-bottom: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .projects-list { display: flex; flex-direction: column; gap: 0; }
+  .project-row { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; padding: 48px 0; border-bottom: 1px solid var(--line); }
+  .project-row:first-child { padding-top: 0; }
+  .project-row:last-child { border-bottom: none; }
+  .project-row-left { display: flex; gap: 24px; align-items: flex-start; }
+  .project-number { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--fg-faint); flex-shrink: 0; padding-top: 4px; }
+  .project-info { flex: 1; }
+  .project-category { font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); display: block; margin-bottom: 8px; }
+  .project-title { font-size: 1.5rem; margin-bottom: 12px; color: #fff; }
+  .project-desc { font-size: 15px; line-height: 1.7; color: var(--fg-muted); margin-bottom: 20px; }
+  .project-row-right { display: flex; flex-direction: column; gap: 16px; }
+  .project-metric { display: flex; align-items: baseline; gap: 8px; padding-top: 16px; border-top: 1px solid var(--line); }
   .metric-value { font-family: 'Fraunces', serif; font-size: 1.5rem; color: var(--accent); }
   .metric-label { font-size: 13px; color: var(--fg-muted); }
 
@@ -493,7 +517,7 @@ import Layout from '../layouts/Layout.astro';
   .badge-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: pulse-dot 2s ease-in-out infinite; }
   @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   .contact-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-  .contact-card { border: 1px solid var(--line); border-radius: 16px; padding: 32px; background: rgba(10,10,15,0.4); }
+  .contact-card { border: 1px solid var(--line); border-radius: 16px; padding: 32px; background: var(--bg-card); }
   .contact-info-row { padding: 16px 0; border-bottom: 1px solid var(--line); }
   .contact-info-row:last-child { border-bottom: none; }
   .contact-info-row .eyebrow { display: block; margin-bottom: 6px; }
@@ -507,27 +531,29 @@ import Layout from '../layouts/Layout.astro';
   .brand-sm { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #fff; }
   .footer-copy { font-size: 12px; color: var(--fg-faint); }
   .footer-right { display: flex; gap: 24px; }
-  .footer-right a { font-size: 13px; color: var(--fg-faint); transition: color 0.2s; }
+  .footer-right a { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--fg-faint); transition: color 0.2s; }
   .footer-right a:hover { color: var(--fg); }
 
   /* RESPONSIVE */
   @media (max-width: 1024px) {
-    .skills-grid, .projects-grid { grid-template-columns: repeat(2, 1fr); }
+    .skills-layout { grid-template-columns: 1fr; gap: 40px; }
+    .project-row { grid-template-columns: 1fr; gap: 24px; }
     .exp-layout { grid-template-columns: 1fr; gap: 40px; }
     .exp-header { position: static; }
   }
   @media (max-width: 768px) {
-    .header-nav { display: none; position: fixed; top: 64px; left: 0; right: 0; background: rgba(10,10,15,0.95); backdrop-filter: blur(12px); padding: 24px; flex-direction: column; gap: 20px; border-bottom: 1px solid var(--line); }
+    .header-nav { display: none; position: fixed; top: 72px; left: 0; right: 0; background: rgba(10,10,15,0.95); backdrop-filter: blur(12px); padding: 24px; flex-direction: column; gap: 20px; border-bottom: 1px solid var(--line); }
     .header-nav.open { display: flex; }
     .hamburger { display: flex; }
     .hero-eyebrows { flex-direction: column; align-items: flex-start; gap: 4px; }
     .eyebrow-sep { display: none; }
     .stats-grid { grid-template-columns: 1fr; gap: 24px; }
-    .skills-grid, .projects-grid { grid-template-columns: 1fr; }
     .contact-layout { grid-template-columns: 1fr; gap: 40px; }
     .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
     .footer-right { flex-wrap: wrap; justify-content: center; }
     .hero-glow { display: none; }
+    .project-row-left { flex-direction: column; gap: 12px; }
+    .project-number { padding-top: 0; }
   }
 </style>
 
@@ -536,7 +562,7 @@ import Layout from '../layouts/Layout.astro';
   setTimeout(function() {
     var loader = document.getElementById('loader');
     if (loader) loader.classList.add('hide');
-  }, 900);
+  }, 1200);
 
   // Header scroll effect
   var header = document.getElementById('site-header');
@@ -544,16 +570,101 @@ import Layout from '../layouts/Layout.astro';
     header.classList.toggle('scrolled', window.scrollY > 50);
   });
 
-  // Scroll reveal
-  var revealObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-        revealObserver.unobserve(entry.target);
+  // Register GSAP ScrollTrigger
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero animations
+  gsap.from('.hero-eyebrows', {
+    opacity: 0, y: 20, duration: 0.8, delay: 0.3,
+    ease: 'power3.out'
+  });
+  gsap.from('h1 .name-first', {
+    opacity: 0, y: 30, duration: 0.8, delay: 0.5,
+    ease: 'power3.out'
+  });
+  gsap.from('h1 .name-last', {
+    opacity: 0, y: 30, duration: 0.8, delay: 0.65,
+    ease: 'power3.out'
+  });
+  gsap.from('.hero-desc', {
+    opacity: 0, y: 20, duration: 0.8, delay: 0.8,
+    ease: 'power3.out'
+  });
+  gsap.from('.hero-actions', {
+    opacity: 0, y: 20, duration: 0.8, delay: 0.95,
+    ease: 'power3.out'
+  });
+  gsap.from('.scroll-hint', {
+    opacity: 0, y: 20, duration: 0.8, delay: 1.1,
+    ease: 'power3.out'
+  });
+
+  // Stats counter animation
+  document.querySelectorAll('.stat-number').forEach(function(el) {
+    var target = parseInt(el.getAttribute('data-count'));
+    gsap.fromTo(el, { textContent: 0 }, {
+      textContent: target,
+      duration: 2,
+      ease: 'power2.out',
+      snap: { textContent: 1 },
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 80%',
+        once: true
       }
     });
-  }, { threshold: 0.15 });
-  document.querySelectorAll('.reveal').forEach(function(el) { revealObserver.observe(el); });
+  });
+
+  // Section reveal animations
+  gsap.utils.toArray('.section-label, .section-title, .section-desc').forEach(function(el) {
+    gsap.from(el, {
+      opacity: 0, y: 30, duration: 0.8,
+      ease: 'power3.out',
+      scrollTrigger: { trigger: el, start: 'top 85%', once: true }
+    });
+  });
+
+  // Skills section
+  gsap.from('.skills-left', {
+    opacity: 0, x: -40, duration: 0.8,
+    ease: 'power3.out',
+    scrollTrigger: { trigger: '.skills-layout', start: 'top 75%', once: true }
+  });
+  gsap.from('.skill-category-card', {
+    opacity: 0, y: 30, duration: 0.6, stagger: 0.1,
+    ease: 'power3.out',
+    scrollTrigger: { trigger: '.skills-right', start: 'top 80%', once: true }
+  });
+
+  // Timeline items
+  gsap.utils.toArray('.timeline-item').forEach(function(item, i) {
+    gsap.from(item, {
+      opacity: 0, x: -30, duration: 0.7, delay: i * 0.15,
+      ease: 'power3.out',
+      scrollTrigger: { trigger: item, start: 'top 85%', once: true }
+    });
+  });
+
+  // Project rows
+  gsap.utils.toArray('.project-row').forEach(function(row) {
+    gsap.from(row, {
+      opacity: 0, y: 40, duration: 0.8,
+      ease: 'power3.out',
+      scrollTrigger: { trigger: row, start: 'top 85%', once: true }
+    });
+  });
+
+  // Contact section
+  gsap.from('.contact-left', {
+    opacity: 0, x: -40, duration: 0.8,
+    ease: 'power3.out',
+    scrollTrigger: { trigger: '.contact-layout', start: 'top 75%', once: true }
+  });
+  gsap.from('.contact-card', {
+    opacity: 0, x: 40, duration: 0.8,
+    ease: 'power3.out',
+    scrollTrigger: { trigger: '.contact-layout', start: 'top 75%', once: true }
+  });
 
   // Hamburger
   var hamburger = document.getElementById('hamburger');
