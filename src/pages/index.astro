@@ -568,7 +568,12 @@ import Layout from '../layouts/Layout.astro';
 </style>
 
 <script is:inline>
-document.addEventListener('DOMContentLoaded', function() {
+function initAnimations() {
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+    setTimeout(initAnimations, 100);
+    return;
+  }
+
   // Loader
   setTimeout(function() {
     var loader = document.getElementById('loader');
@@ -711,5 +716,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }, { threshold: 0.3 });
   sections.forEach(function(s) { sectionObserver.observe(s); });
-});
+}
+
+document.addEventListener('DOMContentLoaded', initAnimations);
 </script>
